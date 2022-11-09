@@ -3,23 +3,17 @@ import {Routes, Route} from 'react-router-dom';
 import {getUser} from "./utilities/user-service";
 import AuthPage from "./pages/AuthPage";
 import Navbar from "./components/Navbar";
-import {LandingPage} from "./pages/landingpage/LandingPage"
+import {LandingPage} from "./pages/LandingPage"
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
   const [user, setUser] = useState(getUser());
-  console.log(user)
   return (
-    <main className="App">
-      { user ? (
-        <>
-          <Navbar user={user} setUser={setUser}/>
-        </>
-      ) : (
-      <LandingPage setUser={setUser}/>
-      )}
-    </main> 
+    <div>
+      <LandingPage />
+    </div>
   );
 }
 
