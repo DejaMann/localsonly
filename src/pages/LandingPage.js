@@ -1,11 +1,15 @@
 import React from 'react'
-import Navbar from "../components/Navbar"
+import Navi from "../components/Navi"
+import logo from "../images/logo.png"
+import { SearchBar } from '../components/SearchBar/SearchBar'
 
 
 export function LandingPage() {
     return (
         <div>
-            <Navbar />
+            <Navi />
+            <img src={logo} alt='logo'/>
+            <SearchBar />
             
         </div>
     )
