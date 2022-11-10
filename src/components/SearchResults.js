@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export function Search () {
+export function SearchResults () {
     return (
         <div>Search</div>
     )
