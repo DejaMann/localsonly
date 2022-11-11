@@ -1,18 +1,18 @@
 import AuthPage from "./pages/AuthPage";
-import Navbar from "./components/Navi";
+import LandingNav from "./components/LandingNav";
 import {LandingPage} from "./pages/LandingPage"
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 //latest syntax replaces Switch with Routes
-import {SearchResults} from "./components/SearchResults"
+import {Search} from "./components/Search"
 import {LogOut} from "./components/LogOut"
 
 
 function App() {
   return (
     <Routes>
-      <Route path='/search' element={<SearchResults />} />
+      <Route path='/search' element={<Search />} />
       {/* new syntax replace component with element  */}
       <Route path='/' element={<LandingPage />} />
       {/* will need route for AuthPage */}

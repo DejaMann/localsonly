@@ -6,11 +6,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
-const Navi = () => {
+const LandingNav = () => {
   return (
     <Navbar bg="white" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Replace with..?</Navbar.Brand>
+        <Navbar.Brand href="#">LOCALS ONLY</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -30,14 +30,10 @@ const Navi = () => {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form className="d-flex">
-            <span>Log In</span>
-            <Button variant="outline-success">Sign Up</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
 
-export default Navi
+export default LandingNav
