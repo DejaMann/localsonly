@@ -1,23 +1,36 @@
 // THIS IS THE SEARCH BAR ON THE LANDING PAGE - DO NOT HAVE TO BE LOGGED IN TO SEARCH
-
-import React from 'react';
+import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import Button from 'react-bootstrap/Button';
 
 
 
-export function SearchBar() {
+export function SearchBar(props) {
+    const [term, setTerm] = useState(props.term || '');
+    const [location, setLocation] = useState(props.location || '');
+
+    function submit(e) {
+        if(typeof props.search === 'function') {
+            props.search(term, location);
+        }
+        console.log(term, location);
+        e.preventDefault();
+    }
+
     return (
-        <div>
+        <form>
             <InputGroup className={"mb-3"}>
-                <InputGroup.Text id="basic-addon1">Search</InputGroup.Text>
+            <Button variant="primary" onClick={submit}>Search</Button>
                     <Form.Control
+                    onChange={(e) => setTerm(e.target.value)}
+                    // updating term and location on every key stroke
                         placeholder="Tacos Las Dos Hermanas, El Asadero ..."
                         aria-label="Search"
                         aria-describedby="basic-addon1"
                     />
                 </InputGroup>
-        </div>
+        </form>
 
     )
 }
