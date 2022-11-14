@@ -8,6 +8,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import {Search} from "./components/Search/Search"
 import {LogOut} from "./components/LogOut"
 
+const Rating = require ('react-rating')
+
 
 function App() {
   return (

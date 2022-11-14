@@ -2,11 +2,8 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
-// TOP NAV ON LANDING PAGE - DO NOT HAVE TO BE LOGGED IN JUST TO SEARCH
-
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
+// TOP NAV ON LANDING PAGE - DO NOT HAVE TO BE LOGGED IN JUST TO SEARCH
 
 const LandingNav = () => {
   return (
@@ -22,19 +19,14 @@ const LandingNav = () => {
           >
             <Nav.Link href="#action1">Cities</Nav.Link>
             <Nav.Link href="#action2">Trucks</Nav.Link>
-            <NavDropdown title="Reviews" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action4">
-                Reviews
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Write a Review
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="#action3">Reviews</Nav.Link>
+            <Button variant="outline-success">Login</Button>
+            <Button variant="outline-success">Sign Up</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
   );
 }
 

@@ -2,6 +2,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Rating from 'react-rating'
 
 
 export function SearchResult () {
@@ -13,6 +14,10 @@ export function SearchResult () {
         <Card.Title>Truck/shop name</Card.Title>
         <Card.Text>
          Truck/shop description
+         <br />
+         Address {/* Google maps API for address? */}
+         <br />
+         <Rating />
         </Card.Text>
         <Button variant="primary">Go</Button>
       </Card.Body>
@@ -20,3 +25,4 @@ export function SearchResult () {
         </div>
     );
 }
+
