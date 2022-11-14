@@ -5,7 +5,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 //latest syntax replaces Switch with Routes
-import {Search} from "./components/Search"
+import {Search} from "./components/Search/Search"
 import {LogOut} from "./components/LogOut"
 
 

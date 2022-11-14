@@ -4,12 +4,16 @@ import { SearchBar } from '../components/SearchBar/SearchBar'
 import LandingNav from '../components/LandingNav'
 
 
+
 export function LandingPage() {
     return (
         <div>
-            <LandingNav />
-            <img src={logo} alt='logo'/>
-            <SearchBar /> 
+            <div>
+                <LandingNav />
+                <img src={logo}  alt='logo'/>
+                <SearchBar /> 
+            </div>
         </div>
     )
 }
+
