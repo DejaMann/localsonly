@@ -1,3 +1,6 @@
+// SEARCH AND LOGIN/SIGNUP ONCE PAST THE LANDING PAGE
+// ONLY NEED TO BE LOGGED IN TO LEAVE A REVIEW, NOT TO SEARCH
+
 import React from 'react'
 import logo from '../images/logo.png'
 import Button from 'react-bootstrap/Button';

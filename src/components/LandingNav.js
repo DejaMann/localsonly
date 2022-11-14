@@ -2,6 +2,8 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
+// TOP NAV ON LANDING PAGE - DO NOT HAVE TO BE LOGGED IN JUST TO SEARCH
+
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
