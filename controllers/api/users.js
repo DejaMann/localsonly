@@ -1,5 +1,4 @@
 // Funcs that hold the logic of creating users in the db
-
 const User = require('../../models/user');
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
@@ -24,11 +23,11 @@ async function create(req, res) {
   async function logIn(req, res) {
     try {
       // find user on database
-      const user = await User.findOne({email: req.body.email})
+      const user = await User.findOne({username: req.body.username})
 
       if (!user){
         // if there is NO user found
-        return res.status(400).json({msg: 'Invalid email or password'})
+        return res.status(400).json({msg: 'Invalid username or password'})
       }
 
       // use bcrypt to compare passwords

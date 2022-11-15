@@ -1,4 +1,4 @@
-// THIS IS THE SEARCH BAR ON THE LANDING PAGE - DO NOT HAVE TO BE LOGGED IN TO SEARCH
+// SEARCH BAR ON THE LANDING PAGE - (DO NOT HAVE TO BE LOGGED IN TO SEARCH?)
 import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -20,8 +20,12 @@ export function SearchBar(props) {
 
     return (
         <form>
-            <InputGroup className={"mb-3"}>
-            <Button variant="primary" onClick={submit}>Search</Button>
+            <div>
+              <InputGroup className={"mb-3"}>
+                <Button variant="primary" onClick={submit}>Search</Button>
+                <span className="icon is-small"><i className="fas fa-search"></i></span>
+              </InputGroup>
+            </div>
                     <Form.Control
                     onChange={(e) => setTerm(e.target.value)}
                     // updating term and location on every key stroke
@@ -29,7 +33,6 @@ export function SearchBar(props) {
                         aria-label="Search"
                         aria-describedby="basic-addon1"
                     />
-                </InputGroup>
         </form>
 
     )

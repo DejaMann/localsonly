@@ -1,6 +1,7 @@
 import AuthPage from "./pages/AuthPage";
 import LandingNav from "./components/LandingNav";
 import {LandingPage} from "./pages/LandingPage"
+import SignInPage from "./pages/SignInPage"
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
@@ -17,8 +18,8 @@ function App() {
       <Route path='/' element={<LandingPage />} />
       <Route path='/search' element={<Search />} />
       {/* new syntax replace component with element  */}
-      <Route path='/authpage' element={<AuthPage />} />
-      {/* will need route for AuthPage */}
+      <Route path='/signin' element={<SignInPage />} />
+      {/* Fix or get help */}
     </Routes>
   );
 }

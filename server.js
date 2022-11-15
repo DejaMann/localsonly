@@ -22,7 +22,8 @@ app.use(require('./config/checkToken'))
 
 // Put API routes here before the 'catch all' route
 app.use('/api/users', require('./routes/api/users'))
-app.use('/api/trucks', require('./routes/api/truckroute'))
+// app.use('/api/users', require('./controllers/api/users'))
+// ^^ GET HELP - IS THIS NEEDED
 // Protects the API routes below from anonymous users
 const ensureLoggedIn = require('./config/ensureLoggedIn');
 
