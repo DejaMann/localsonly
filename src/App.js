@@ -14,9 +14,10 @@ const Rating = require ('react-rating')
 function App() {
   return (
     <Routes>
+      <Route path='/' element={<LandingPage />} />
       <Route path='/search' element={<Search />} />
       {/* new syntax replace component with element  */}
-      <Route path='/' element={<LandingPage />} />
+      <Route path='/authpage' element={<AuthPage />} />
       {/* will need route for AuthPage */}
     </Routes>
   );
